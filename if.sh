@@ -2,7 +2,7 @@
 
 read -p "Enter the package you want to install: " package
 
-sudo dnf install "$package" -y > /dev/null
+sudo dnf install "$package" -y > /dev/null  2>&1
 
 if [ $? -eq 0 ]; then
     echo "$package installed successfully"
