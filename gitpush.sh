@@ -25,7 +25,7 @@ git add $1
 git commit -m "$message"
 git push origin "$branch"
 
-if [$? -eq 0 ]; then
+if [ $? -eq 0 ]; then
 	echo "Successfully push to branch $branch "
 else
 	echo "Error pushing to github"
