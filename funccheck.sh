@@ -1,8 +1,12 @@
 #!/bin/bash
 
 function host_web(){
+	sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git portfolio
+
 	sudo rm -rf /var/www/html/*
 	echo "deleted successfully"
+	sudo mv portfolio/* /var/www/html/
+	echo "successfully moved the project"
 }
 
 #install git
