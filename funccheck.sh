@@ -27,3 +27,6 @@ else
 	echo "httpd installed successfully"
 fi
 
+#calling the function
+host_web
+
