@@ -13,7 +13,7 @@ function host_web(){
 if command -v git; then
 	echo "git has already been installed"
 else
-	sudo dnf install git -y
+	sudo dnf install git -y > /dev/null  2>&1
 
 fi
 
@@ -23,7 +23,7 @@ if command -v httpd; then
 	sudo systemctl start httpd
 	sudo systemctl enable httpd
 else
-	sudo dnf install httpd -y
+	sudo dnf install httpd -y > /dev/null 2>&1
 	echo "httpd installed successfully"
 fi
 
