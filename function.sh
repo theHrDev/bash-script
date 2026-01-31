@@ -5,4 +5,8 @@ function my_func(){
 
 }
 
+function check(){
+	echo "Done"
+}
+
 my_func Rukayat  CSC
