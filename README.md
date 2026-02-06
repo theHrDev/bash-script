@@ -1,1 +1,1 @@
-This repo consist of different script
+This repo consist of different scripts used for different task(automating)
