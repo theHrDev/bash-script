@@ -6,7 +6,7 @@
   sudo systemctl enable httpd
 
   sudo dnf install git -y
-  git clone https://github.com/codewithsadee/anon-ecommerce-website.git ecommerce
+  git clone https://github.com/codewithsadee/dashboard.git
   sudo rm -rf /var/www/html/*
   sudo mv ecommerce/* /var/www/html/
   echo "Done Provisioning"
